@@ -1,6 +1,6 @@
 import { useRecoilState } from "recoil";
 import { userState } from "../atom/userAtom";
-import MiniProfile from "./Miniprofile";
+import MiniProfile from"./MiniProfile"
 import Posts from "./Posts";
 import Stories from "./Stories";
 import Suggestions from "./Suggestions";

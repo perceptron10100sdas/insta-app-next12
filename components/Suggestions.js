@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import minifaker from "minifaker";
 import "minifaker/locales/en";
+import { useEffect } from "react";
 
 const Suggestions = () => {
   const [suggestions, setSuggestions] = useState([]);
