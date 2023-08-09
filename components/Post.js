@@ -1,3 +1,4 @@
+import "react";
 import React, { useEffect, useState } from "react";
 import Moment from "react-moment";
 import { db } from "../firebase";
@@ -29,10 +30,13 @@ export default function Post({ img, userImg, caption, username, id }) {
         collection(db, "posts", id, "comments"),
         orderBy("timestamp", "desc")
       ),
-      (snapshot) => {
-        setComments(snapshot.docs);
+      async (snapshot) => {
+        const comments = await snapshot.docs;
+        await setComments(comments);
       }
     );
+  
+  
   }, [db, id]);
   useEffect(() => {
     const unsubscribe = onSnapshot(

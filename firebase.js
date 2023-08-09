@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 
 import { initializeApp, getApp, getApps } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
+=======
+import * as firebase from "firebase";
+import { initializeApp } from "firebase/app";
+//import { getFirestore } from "firebase/firestore";
+import  "firebase/storage";
+>>>>>>> b4e76efa267292e486169cef9f21d7d1e2d9fa72
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
